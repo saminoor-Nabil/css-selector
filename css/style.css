@@ -1,0 +1,62 @@
+div * {
+    background-color: orange;
+  }
+  div > p {
+    background-color: yellow;
+  }
+  
+  p ~ ul {
+    background: #ff0000;
+  }
+  
+  a[target] {
+    background-color: yellow;
+  }
+  a:active {
+    background-color: yellow;
+  }
+  .name::after{
+    content: " Omar Faruq";
+  }
+  .adress::before{
+    content: "Green ";
+    background-color: green;
+  }
+  .flan p:first-child{
+    background-color: blue ;
+  }
+  .flan p:last-child{
+    background-color: red;
+  }
+  .flan p:nth-child(2){
+    background-color: brown;
+  }
+  .flan p:nth-child(3){
+    background-color: violet;
+  }
+  div[class*="test"] {
+    background: #ffff00 !important;
+  }
+  input[type="text"]:enabled {
+    background: gainsboro;
+  }
+  
+  input[type=text]:disabled {
+    background: #dddddd;
+  }
+  
+  ::marker {
+    color: gray;
+  }
+  ::placeholder {
+    color: red;
+  }
+  input:required {
+    background-color: yellow;
+  }
+  input:out-of-range {
+    border: 2px solid red;
+  }
+  input:focus {
+    background-color: lightgreen;
+  }
